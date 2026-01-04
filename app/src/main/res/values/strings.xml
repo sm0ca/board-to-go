@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BoardToGO</string>
+    <string name="union_go_departures_title">Union GO Departures</string>
+    <string name="time_title">TIME</string>
+    <string name="service_line_title">SERVICE LINE</string>
+    <string name="platform_title">PLATFORM</string>
+    <string name="no_trips_placeholder">No trips to display!</string>
+</resources>
