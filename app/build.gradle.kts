@@ -66,22 +66,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    // retrofit
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
     implementation("com.squareup.retrofit2:retrofit:3.0.0")
     implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
-
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
-//    implementation("com.squareup.retrofit2:converter-kotlinx-serialization:latest.version")
-//    implementation("com.squareup.okhttp3:okhttp:5.3.0")
-
-//    implementation(libs.androidx.lifecycle.viewmodel.compose)
-//    implementation(libs.androidx.runtime.livedata)
-
-//    implementation(libs.retrofit)
-
-//    implementation(libs.moshi)
-//    implementation(libs.moshi.kotlin)
-//    implementation(libs.converter.moshi)
-//    implementation(libs.kotlinx.serialization.json)
 }

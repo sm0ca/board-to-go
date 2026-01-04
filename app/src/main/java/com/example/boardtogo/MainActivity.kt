@@ -216,7 +216,6 @@ private fun TripRows(allTrips: List<Trip>) {
             horizontalArrangement = Arrangement.Start
         ) {
             Text(
-                // Drop the seconds from the time val
                 text = item.time.parseTimeStamp(),
                 fontSize = TRIP_ROW_FONT_SIZE.sp,
                 fontWeight = FontWeight.Bold,
@@ -255,7 +254,7 @@ private fun TripRows(allTrips: List<Trip>) {
             Spacer(modifier = Modifier.weight(1f))
 
             Text(
-                text = item.platform?.split('/')[0]?.trim() ?: "...",
+                text = item.platform.parsePlatform(),
                 fontSize = TRIP_ROW_FONT_SIZE.sp,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.primary,
@@ -277,4 +276,10 @@ fun UnionBoardPreview() {
     }
 }
 
-fun String?.parseTimeStamp() = this?.split(' ')?.last()?.dropLast(3) ?: "00:00"
+fun String?.parseTimeStamp() = this
+    ?.split(' ')
+    ?.last()?.dropLast(3) // Drop the seconds from the time val
+    ?: "00:00"
+fun String?.parsePlatform() = this
+    ?.split('/')[0]?.trim()
+    ?: "..."
