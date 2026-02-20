@@ -4,7 +4,7 @@ A simple app to view upcoming GO train departures from Toronto's Union Station, 
 
 Fresh data is automatically fetched every two minutes, and pull-to-refresh is supported to update the feed on-demand as well!
 
-<img src="https://github.com/user-attachments/assets/6fb8c575-470e-4be5-bc40-3f115ef30792" alt="BoardToGO Screenshot" width="200">
+<img src="https://github.com/user-attachments/assets/6fb8c575-470e-4be5-bc40-3f115ef30792" alt="BoardToGO Screenshot" width="250">
 
 
 ## Installation
